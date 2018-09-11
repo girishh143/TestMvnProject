@@ -1,5 +1,7 @@
 package com.mvn.test;
 
+import java.sql.Driver;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -7,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class abcd {
 
-	
+	WebDriver driver;
 	@Test(priority=1)
 	public void demo() throws InterruptedException{
 		
@@ -19,7 +21,7 @@ public class abcd {
 		}
 		
 		
-		WebDriver driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(3000);
 		System.out.println("Url Tital:"+driver.getTitle());
@@ -41,11 +43,13 @@ public class abcd {
 		
 	}
 	
-	
-
 	@Test(priority=3)
 	public void demo3(){
 		System.out.println("priority 3 test case get executed...!!!");
-		
+	}
+	
+	@Test(priority=4)
+	public void demo4(){
+		driver.quit();
 	}
 }
