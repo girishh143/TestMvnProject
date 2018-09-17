@@ -15,7 +15,7 @@ public class abcd {
 		
 		for(int i=0;i<4;i++){
 		System.out.println("Testing......!!!!!!!!!!");
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		}
 		
 		

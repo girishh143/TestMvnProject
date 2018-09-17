@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite Name"  > 
+<suite name="MVN Execution Project"  > 
+
+ <listeners>
+  		<listener class-name = "com.extentreport.listener.ExtentReportListenerClass" />
+  </listeners>
+
 <!-- suite name="Suite Name" --> 
              <test name="TestA" allow-return-values="true">
                      <classes>
