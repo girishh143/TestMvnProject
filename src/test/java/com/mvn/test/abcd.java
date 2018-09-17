@@ -38,6 +38,7 @@ public class abcd {
 	@Test(priority=2)
 	public void demo2(){
 		System.out.println("priority 2 test case get executed...!!!");
+		driver.findElement(By.xpath("ddd")).click();
 		
 	}
 	
@@ -48,6 +49,11 @@ public class abcd {
 	
 	@Test(priority=4)
 	public void demo4(){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		driver.quit();
 	}
 }
