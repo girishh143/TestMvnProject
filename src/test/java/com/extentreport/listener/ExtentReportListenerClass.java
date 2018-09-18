@@ -1,6 +1,8 @@
 package com.extentreport.listener;
 
 import java.io.File;
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -13,19 +15,25 @@ import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
+/**
+ * 
+ * @author girishk
+ * This file is require for extended report when your using the jar 2.41.0
+ * also you have to update the pom.xml accordingly
+ */
+//import com.relevantcodes.extentreports.ExtentReports;
+//import com.relevantcodes.extentreports.ExtentTest;
+//import com.relevantcodes.extentreports.LogStatus;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-
-public class ExtentReportListenerClass implements IReporter {
+public class ExtentReportListenerClass{}/* implements IReporter {
 	private ExtentReports extent;
+
 	
 	
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory ) {
 		extent = new ExtentReports(outputDirectory + File.separator
-				+ "MvnExtent_Report.html", true);
+				+ "Extent_Report"+dateTimeGenerator()+".html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -73,6 +81,15 @@ public class ExtentReportListenerClass implements IReporter {
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-}
+	
+	public static String dateTimeGenerator()
+	{
+	Format formatter = new SimpleDateFormat("YYYYMMdd_HHmmssSSS");
+	Date date = new Date(System.currentTimeMillis());
+	return formatter.format(date);
+	}
+	}
+	 
 
+*/
  

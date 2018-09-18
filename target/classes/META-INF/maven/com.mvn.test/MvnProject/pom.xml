@@ -55,11 +55,19 @@
 		</dependency>
 		
 			<dependency>
+			    <groupId>com.aventstack</groupId>
+			    <artifactId>extentreports</artifactId>
+			    <version>3.1.5</version>
+			    <scope>provided</scope>
+			</dependency>
+		
+		<!-- Used For Extended Report 2.41 (commit the 3.1.5 jar if you are using this)
+			<dependency>
 				<groupId>com.relevantcodes</groupId>
 				<artifactId>extentreports</artifactId>
 				<version>2.41.0</version>
 			</dependency>
-			
+			-->
 			<dependency>
 				<groupId>org.hamcrest</groupId>
 				<artifactId>hamcrest-core</artifactId>

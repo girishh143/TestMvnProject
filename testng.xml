@@ -3,7 +3,8 @@
 <suite name="MVN Execution Project"  > 
 
  <listeners>
-  		<listener class-name = "com.extentreport.listener.ExtentReportListenerClass" />
+        <listener class-name="com.mvn.util.TestListener"/>
+  		<!-- listener class-name = "com.extentreport.listener.ExtentReportListenerClass" /-->
   </listeners>
 
 <!-- suite name="Suite Name" --> 
