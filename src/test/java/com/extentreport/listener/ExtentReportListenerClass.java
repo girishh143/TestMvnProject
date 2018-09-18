@@ -20,9 +20,10 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReportListenerClass implements IReporter {
 	private ExtentReports extent;
-
+	
+	
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
+			String outputDirectory ) {
 		extent = new ExtentReports(outputDirectory + File.separator
 				+ "MvnExtent_Report.html", true);
 

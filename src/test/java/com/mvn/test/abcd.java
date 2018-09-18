@@ -22,7 +22,7 @@ public class abcd {
 		driver = new FirefoxDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(3000);
-		System.out.println("Url Tital:"+driver.getTitle());
+		System.out.println("Url Tital: "+driver.getTitle());
 		
 		driver.findElement(By.id("txtUsername")).sendKeys("admin");
 		System.out.println("UserName entered...!!!");
