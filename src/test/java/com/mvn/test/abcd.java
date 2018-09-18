@@ -38,7 +38,7 @@ public class abcd {
 	@Test(priority=2)
 	public void demo2(){
 		System.out.println("priority 2 test case get executed...!!!");
-		driver.findElement(By.xpath("ddd")).click();
+		//driver.findElement(By.xpath("ddd")).click();
 		
 	}
 	
