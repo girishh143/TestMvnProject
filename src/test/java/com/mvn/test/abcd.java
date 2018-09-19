@@ -26,9 +26,10 @@ public class abcd {
 		 
 		//driver = new FirefoxDriver();
 		driver = new HtmlUnitDriver();
+		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(3000);
-		System.out.println("Url Tital: "+driver.getTitle());
+		//System.out.println("Url Tital: "+driver.getTitle());
 		
 		driver.findElement(By.id("txtUsername")).sendKeys("admin");
 		System.out.println("UserName entered...!!!");
@@ -36,7 +37,7 @@ public class abcd {
 		System.out.println("Password Entered...!!!");
 		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("Login Successful...!!!");
-		System.out.println("Tital after Login:"+driver.getTitle());
+		//System.out.println("Tital after Login:"+driver.getTitle());
 		 
 		
 	}
