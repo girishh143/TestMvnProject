@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 public class abcd {
 
 	WebDriver driver;
@@ -45,6 +47,7 @@ public class abcd {
 	@Test(priority=3)
 	public void demo3(){
 		System.out.println("priority 3 test case get executed...!!!");
+		Assert.assertEquals("True", "False");
 	}
 	
 	@Test(priority=4)
