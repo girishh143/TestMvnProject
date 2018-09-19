@@ -3,13 +3,15 @@ package com.mvn.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
 public class abcd {
 
-	WebDriver driver;
+	//WebDriver driver;
+	HtmlUnitDriver  driver;
 	@Test(priority=1)
 	public void demo() throws InterruptedException{
 		
@@ -21,8 +23,9 @@ public class abcd {
 		}
 		
 		System.out.println("priority 1 test case get executed...!!!");
-		/*
-		driver = new FirefoxDriver();
+		 
+		//driver = new FirefoxDriver();
+		driver = new HtmlUnitDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(3000);
 		System.out.println("Url Tital: "+driver.getTitle());
@@ -34,7 +37,7 @@ public class abcd {
 		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("Login Successful...!!!");
 		System.out.println("Tital after Login:"+driver.getTitle());
-		*/
+		 
 		
 	}
 	
@@ -58,7 +61,7 @@ public class abcd {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		//driver.quit();
+		driver.quit();
 		System.out.println("priority 4 test case get executed...!!!");
 	}
 }
