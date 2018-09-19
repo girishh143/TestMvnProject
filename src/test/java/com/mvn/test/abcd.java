@@ -55,6 +55,5 @@ public class abcd {
 			e.printStackTrace();
 		}
 		driver.quit();
-		System.out.println("Closing the driver...!!!");
 	}
 }
