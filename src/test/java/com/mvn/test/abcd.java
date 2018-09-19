@@ -20,7 +20,8 @@ public class abcd {
 		Thread.sleep(500);
 		}
 		
-		
+		System.out.println("priority 1 test case get executed...!!!");
+		/*
 		driver = new FirefoxDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(3000);
@@ -33,7 +34,7 @@ public class abcd {
 		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("Login Successful...!!!");
 		System.out.println("Tital after Login:"+driver.getTitle());
-		
+		*/
 		
 	}
 	
@@ -47,7 +48,7 @@ public class abcd {
 	@Test(priority=3)
 	public void demo3(){
 		System.out.println("priority 3 test case get executed...!!!");
-		Assert.assertEquals("True", "False");
+		//Assert.assertEquals("True", "False");
 	}
 	
 	@Test(priority=4)
@@ -58,5 +59,6 @@ public class abcd {
 			e.printStackTrace();
 		}
 		//driver.quit();
+		System.out.println("priority 4 test case get executed...!!!");
 	}
 }
