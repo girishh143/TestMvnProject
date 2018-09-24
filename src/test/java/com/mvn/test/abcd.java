@@ -55,7 +55,7 @@ public class abcd {
 	@Test(priority=3)
 	public void demo3(){
 		System.out.println("priority 3 test case get executed...!!!");
-		Assert.assertEquals("True", "True");
+		Assert.assertEquals("True", "False");
 	}
 	
 	@Test(priority=4)
