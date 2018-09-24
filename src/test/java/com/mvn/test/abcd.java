@@ -26,7 +26,7 @@ public class abcd {
 		options.addArguments("--disable-gpu");
 		driver = new ChromeDriver(options);
 		
-		for(int i=0;i<3;i++){
+		for(int i=0;i<2;i++){
 		System.out.println("Testing......!!!!!!!!!!");
 		Thread.sleep(500);
 		}
