@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class abcd {
@@ -54,7 +55,7 @@ public class abcd {
 	@Test(priority=3)
 	public void demo3(){
 		System.out.println("priority 3 test case get executed...!!!");
-		//Assert.assertEquals("True", "False");
+		Assert.assertEquals("True", "True");
 	}
 	
 	@Test(priority=4)
